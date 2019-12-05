@@ -1,0 +1,56 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <filter id="border_green" >
+    <feMorphology operator="erode" in="SourceAlpha" radius="4" />
+    <feComposite in="SourceAlpha" operator="out" />
+    <feComponentTransfer result="border">
+      <feFuncR type="table" tableValues="0.4"/>
+      <feFuncG type="table" tableValues="0.8"/>
+      <feFuncB type="table" tableValues="0.4"/>
+    </feComponentTransfer>
+    <feComposite in="border" in2="SourceGraphic" operator="over" />
+  </filter>
+
+  <filter id="border_red" >
+    <feMorphology operator="erode" in="SourceAlpha" radius="4" />
+    <feComposite in="SourceAlpha" operator="out" />
+    <feComponentTransfer result="border">
+      <feFuncR type="table" tableValues="0.81"/>
+      <feFuncG type="table" tableValues="0.06"/>
+      <feFuncB type="table" tableValues="0.3"/>
+    </feComponentTransfer>
+    <feComposite in="border" in2="SourceGraphic" operator="over" />
+  </filter>
+
+  <filter id="border_blue" >
+    <feMorphology operator="erode" in="SourceAlpha" radius="4" />
+    <feComposite in="SourceAlpha" operator="out" />
+    <feComponentTransfer result="border">
+      <feFuncR type="table" tableValues="0.06"/>
+      <feFuncG type="table" tableValues="0.34"/>
+      <feFuncB type="table" tableValues="0.81"/>
+    </feComponentTransfer>
+    <feComposite in="border" in2="SourceGraphic" operator="over" />
+  </filter>
+
+  <filter id="border_orange" >
+    <feMorphology operator="erode" in="SourceAlpha" radius="4" />
+    <feComposite in="SourceAlpha" operator="out" />
+    <feComponentTransfer result="border">
+      <feFuncR type="table" tableValues="1"/>
+      <feFuncG type="table" tableValues="0.75"/>
+      <feFuncB type="table" tableValues="0.31"/>
+    </feComponentTransfer>
+    <feComposite in="border" in2="SourceGraphic" operator="over" />
+  </filter>
+
+  <filter id="border_gray" >
+    <feMorphology operator="erode" in="SourceAlpha" radius="4" />
+    <feComposite in="SourceAlpha" operator="out" />
+    <feComponentTransfer result="border">
+      <feFuncR type="table" tableValues=".5"/>
+      <feFuncG type="table" tableValues=".5"/>
+      <feFuncB type="table" tableValues=".5"/>
+    </feComponentTransfer>
+    <feComposite in="border" in2="SourceGraphic" operator="over" />
+  </filter>
+</svg>
